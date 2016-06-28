@@ -64,9 +64,7 @@ function packagesNpmInstall(source) {
   });
 }
 
-shell.exec('bower cache clean && bower install', function(code) {
-  console.log('    Updating Bower dependencies');
-});
+
 
 packagesNpmInstall('packages/contrib');
 packagesNpmInstall('packages/custom');

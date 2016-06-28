@@ -22,7 +22,7 @@
     "karma": "node node_modules/karma/bin/karma start karma.conf.js",
     "test": "gulp test",
     "test-e2e": "gulp e2e.test",
-    "postinstall": "node tools/scripts/postinstall.js"
+    "postinstall": "bower cache clean && bower instal;node tools/scripts/postinstall.js"
   },
   "dependencies": {
     "angular": "^1.5.5",
