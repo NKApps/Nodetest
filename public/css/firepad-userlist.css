@@ -1,15 +1,4 @@
-Skip to content
-Personal Open source Business Explore
-Sign upSign inPricingBlogSupport
-This repository
-Search
- Watch 145  Star 2,178  Fork 465 firebase/firepad
- Code  Issues 50  Pull requests 8  Pulse  Graphs
-Branch: master Find file Copy pathfirepad/examples/firepad-userlist.css
-02cbc6f  on Apr 12, 2013
-@mikelehen mikelehen Tweak firepad userlist styling, update examples/firepad.js.
-1 contributor
-RawBlameHistory     89 lines (79 sloc)  2.04 KB
+
 .firepad-userlist {
   /* default height */
   height: 400px;
@@ -98,5 +87,3 @@ input.firepad-userlist-name-input {
   width: 95px;
   font-size: 13px;
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
