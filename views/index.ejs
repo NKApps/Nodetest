@@ -26,6 +26,7 @@
     }
   </style>
 </head>
+.
 
 <body>
   <div id="firepad-container"></div>
@@ -39,7 +40,7 @@
       //// Create CodeMirror (with line numbers and the JavaScript mode).
       var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
         lineNumbers: true,
-        mode: 'javascript'
+        mode: 'java'
       });
       //// Create Firepad.
       var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
