@@ -8,7 +8,7 @@
 
   <!-- CodeMirror and its JavaScript mode file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.2.0/codemirror.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.2.0/mode/java/java.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.2.0/mode/javascript/javascript.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.2.0/codemirror.css" />
 
   <!-- Firepad -->
@@ -16,14 +16,16 @@
   <script src="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.min.js"></script>
 
   <style>
+   
     html { height: 100%; background:grey;}
     body { margin: 0; height: 100%; position: relative; }
-    /* Height / width / positioning can be customized for your use case.
-       For demo purposes, we make firepad fill the entire browser. */
     #firepad-container {
-      width: 30%;
-      height: 100%;
-    }
+      position:absolute;
+	  width: 70%;
+      height: 65%;
+	  right:0; 
+	  }
+  
   </style>
 </head>
 .
@@ -40,7 +42,7 @@
       //// Create CodeMirror (with line numbers and the JavaScript mode).
       var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
         lineNumbers: true,
-        mode: 'java'
+        mode: 'javascript'
       });
       //// Create Firepad.
       var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
