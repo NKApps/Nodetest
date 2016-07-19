@@ -3,6 +3,13 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Firebase -->
   <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 
@@ -31,6 +38,7 @@
 .
 
 <body>
+	<div id="menu"><button type="button" class="btn btn-success" btn-lg>Run</button></div>
   <div id="firepad-container"></div>
 
   <script>
@@ -46,7 +54,7 @@
       });
       //// Create Firepad.
       var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
-        defaultText: '// JavaScript Editing with Firepad!\nfunction go() {\n  var message = "Hello, world.";\n  console.log(message);\n}'
+        defaultText: '// JavaScript!\nfunction go() {\n  var message = "Hello, world.";\n  console.log(message);\n}'
       });
     }
     // Helper to get hash from end of URL or generate a random one.
